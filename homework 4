@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+def draw_pic(g,v0):
+    v0 = float(v0)
+    g = float(g)
+    v=[]
+    v.append(v0)
+        
+    t = np.linspace(0,0.2,1000)
+    #Euler method 数值解
+    for i in range(999):
+        v_new = v[i]-g*t[1]
+        v.append(v_new)
+    #exact solution 解析解
+    V = v0-g*t          
+    #绘图
+    plt.figure(figsize=(10,6))
+    plt.plot(t,V,label="exact solution",color="red",linewidth=1)
+    plt.plot(t,v,label="Euler method",color="green",linewidth=3,linestyle='--')        
+    plt.xlabel("Time(t)")
+    plt.ylabel("velocity(v)")
+    plt.title("Free falling problems")
+    plt.legend(loc='best')
+    plt.savefig(str(g+v0)+'.png')
+    plt.show()
+
+print 'Now you can draw your curve'
+g = raw_input('input g:')
+v0 = raw_input('input v0:')
+draw_pic(g,v0)
