@@ -12,5 +12,7 @@
 
 #[第四次作业](https://github.com/fbbelief/computationalphysics_N2013301020140/blob/master/homework%204)
 
-  因为还在初学者水平，所以选择了比较简单的第一题作为练习，感谢曹一和陈平涛同学对本次作业的帮忙。  
+  因为还在初学者水平，所以选择了比较简单的第一题作为练习，感谢曹一和陈平涛同学对本次作业的帮忙。
+  
+  ![1.1图片](https://github.com/fbbelief/computationalphysics_N2013301020140/blob/master/1.1)
 
