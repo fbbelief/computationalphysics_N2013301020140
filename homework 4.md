@@ -29,6 +29,7 @@ Euler Method的近似解
 -----
 ###结果分析
 近似解与解析解满足相同的线性关系
+
 ![图片1.1]( https://github.com/fbbelief/computationalphysics_N2013301020140/blob/master/1.1)
 
 -----
